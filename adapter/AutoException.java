@@ -3,6 +3,10 @@ package adapter;
 import java.util.Scanner;
 
 public class AutoException extends Exception{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int errorNo;
 	private String errorMsg;
 	

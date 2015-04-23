@@ -100,7 +100,7 @@ public class Automobile implements Serializable {
 		in.close();
 	}
 	
-	public void deleteOpset()
+	/*public void deleteOpset()
 	{
 		String name = null;
 		int foundIndex = -1;
@@ -108,9 +108,9 @@ public class Automobile implements Serializable {
 		Scanner in = new Scanner(System.in);
 		name = in.nextLine();
 		foundIndex = findOpset(name);
-		//opset[foundIndex].clear();
+		opset[foundIndex].clear();
 		in.close();
-	}
+	}*/
 	
 /** OptionSet accessors, mutators, modifiers **/
 	public String getOptionName(int i, int j)
