@@ -19,6 +19,7 @@ public class DriverLab1 {
 		automobile2.printAll();
 	}
 
+	
 }
 // Output //
 /*

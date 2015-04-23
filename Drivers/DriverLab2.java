@@ -9,7 +9,7 @@ public class DriverLab2 {
 	public static void main(String[] args) throws IOException, AutoException 
 	{
 		BuildAuto test = new BuildAuto();
-		test.buildAuto("utomobileData.txt");
+		test.buildAuto("AutomobileData.txt");
 		test.printAuto(null);
 		test.updateOptionSetName(null, "Colors", "Color");
 		test.printAuto(null);
