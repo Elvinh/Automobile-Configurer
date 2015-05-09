@@ -23,13 +23,16 @@ public abstract class proxyAutomobile {
 	public void updateOptionSetName(String modelName, String optionSetName,
 			String newName) 
 	{
-		autoColl.getAutoMap().get(modelName).setOptionsetName(autoColl.getAutoMap().get(modelName).findOpset(optionSetName), newName);
+		int opsetIndex = autoColl.getAutoMap().get(modelName).findOpset(optionSetName);
+		autoColl.getAutoMap().get(modelName).setOptionsetName(opsetIndex, newName);
 	}
 
 	public void updateOptionPrice(String modelName, String optionSetName,
 			String optionName, float newPrice) 
 	{
-		autoColl.getAutoMap().get(modelName).setOptionPrice(autoColl.getAutoMap().get(modelName).findOpset(optionSetName), autoColl.getAutoMap().get(modelName).findOption(optionSetName, optionName), newPrice);
+		int opsetIndex = autoColl.getAutoMap().get(modelName).findOpset(optionSetName);
+		int opIndex = autoColl.getAutoMap().get(modelName).findOption(optionSetName, optionName);
+		autoColl.getAutoMap().get(modelName).setOptionPrice(opsetIndex, opIndex, newPrice);
 	}
 
 	public void buildAuto(String fileName) throws AutoException 
