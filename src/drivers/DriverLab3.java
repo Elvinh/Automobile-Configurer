@@ -42,6 +42,5 @@ public class DriverLab3 {
 		
 		Automobile auto = new Automobile("The Elton Wagon", 99999.99f);
 		test.getAutoColl().addAuto("The Elton Wagon", auto);
-		test.printAuto("The Elton Wagon");
 	}
 }
